@@ -1,0 +1,32 @@
+Структура данных:
+Определим классы для пользователя и контакта +
+Реализуем методы для чтения и записи данных из/в файлы +
+
+Консольный интерфейс:
+Реализуем основной цикл программы для взаимодействия с пользователем +
+Добавим меню для регистрации, входа в систему и выхода +
+
+Регистрация и аутентификация:
+Реализуем функционал для регистрации новых пользователей +
+Реализуем функционал для входа существующих пользователей +
+
+Меню пользователя:
+Создадим меню для работы с контактами (добавление, редактирование, удаление) .
+Реализуем поиск, сортировку и вывод контактов .
+
+
+Class User
+field name: String
+field login: String
+field password: String
+field contacts: List<Contact>
+
+method getName(): name, String
+method getLogin(): login, String
+method getPassword(): password, String
+method addContact(Contact contact)
+method removeContact(Contact contact)
+method editContact(Contact contact)
+
+Class Contact
+Class PhoneBookApp

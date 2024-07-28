@@ -1,36 +1,44 @@
-import java.io.BufferedReader;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PhoneBookApp {
+    private static UserManager userManager = new UserManager();
+
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void showMainMenu() {
-        System.out.println(" _________________________________________________ ");
-        System.out.println("|                                                 |");
-        System.out.println("|               << Phone book  >>                 |");
-        System.out.println("|                Choose action :                  |");
-        System.out.println("|_________________________________________________|");
-        System.out.println("|                                                 |");
-        System.out.println("| 0 - Exit           ( Exit the program )         |");
-        System.out.println("|-------------------------------------------------|");
-        System.out.println("| 1 - Sign In        ( Enter go to existing user )|");
-        System.out.println("|-------------------------------------------------|");
-        System.out.println("| 2 - Sign Up        ( Register new user )        |");
-        System.out.println("|-------------------------------------------------|");
-        System.out.println("| 3 - Print Users    ( Print existing user )      |");
-        System.out.println("|_________________________________________________|");
-        System.out.println();
-        System.out.print("Введите команду: ");
+    public static void main(String[] args) {
+        startMenu();
+    }
 
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+    private static void startMenu() {
+        while (true) {
+            userManager.loadUsers();
+            Menu.showStartMenu();
 
-        switch (choice) {
-            case 0 -> System.exit(0);
-//            case 1 -> signIn();
-//            case 2 -> signUp();
-//            case 3 -> printUsers();
-//            default -> System.out.println("Unknown command. Try again!");
+            int command = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (command) {
+                case 0:
+                    userManager.saveUsers();
+                    System.exit(0);
+                case 1:
+                    userManager.signIn();
+                    break;
+                case 2:
+                    userManager.signUp();
+                    break;
+                case 3:
+                    userManager.printUsers();
+                    break;
+                default:
+                    System.out.println("Unknown command... Try again!");
+            }
         }
     }
 }
