@@ -16,6 +16,7 @@ public class Menu {
         System.out.println("|_________________________________________________|");
         System.out.print("Enter the command: ");
     }
+
     public static void showUserMenu() {
         System.out.println(" _________________________________________________ ");
         System.out.println("|                                                 |");
@@ -37,6 +38,24 @@ public class Menu {
         System.out.println("|_________________________________________________|");
         System.out.print("Enter the command: ");
     }
+
+    public static void showPrintMenu() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |            Main  menu -> Print menu             |");
+        System.out.println(" |                                                 |");
+        System.out.println(" |_________________________________________________|");
+        System.out.println(" |                                                 |");
+        System.out.println(" | -1 - Come back    ( Return to the main menu )   |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  0 - Print        ( All )                       |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  1 - Print        ( Specific )                  |");
+        System.out.println(" |_________________________________________________|");
+        System.out.print("Enter the command: ");
+    }
+
     public static void showContactMenu() {
         System.out.println(" _________________________________________________ ");
         System.out.println("|                                                 |");

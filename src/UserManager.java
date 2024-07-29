@@ -130,7 +130,7 @@ public class UserManager {
                     ContactManager.contactMenu(user);
                     break;
                 case 2:
-                    ContactManager.prinContacts(user);
+                    ContactManager.printContacts(user);
                     break;
                 case 3:
                     // Sorting
