@@ -213,6 +213,7 @@ public class Menu {
         System.out.println(" |  1 - " + fieldName + "         ( Sort  Z - A )"+    "|");
         System.out.println(" |______________________________________________________|");
         System.out.print("Enter the command: ");
+        
     }
 
 //    public static void showSortNumberAsc() {
