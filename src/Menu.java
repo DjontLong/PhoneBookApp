@@ -199,19 +199,19 @@ public class Menu {
 //    }
 
     public static void showSortMenuByField(String fieldName) {
-        System.out.println("  _________________________________________________");
-        System.out.println(" |                                                 |");
-        System.out.println(" |               << Phone book  >>                 |");
-        System.out.println(" |      Main  menu -> Sorting -> " + fieldName + "              |");
-        System.out.println(" |                                                 |");
-        System.out.println(" |_________________________________________________|");
-        System.out.println(" |                                                 |");
-        System.out.println(" | -1 - Come back    ( Return to the Sorting )     |");
-        System.out.println(" |-------------------------------------------------|");
-        System.out.println(" |  0 - " + fieldName + "         ( Sort  A - Z )               |");
-        System.out.println(" |-------------------------------------------------|");
-        System.out.println(" |  1 - " + fieldName + "         ( Sort  Z - A )               |");
-        System.out.println(" |_________________________________________________|");
+        System.out.println("  ______________________________________________________");
+        System.out.println(" |                                                      |");
+        System.out.println(" |               << Phone book  >>                      |");
+        System.out.println(" |      Main  menu -> Sorting -> " + fieldName +"                   |");
+        System.out.println(" |                                                      |");
+        System.out.println(" |______________________________________________________|");
+        System.out.println(" |                                                      |");
+        System.out.println(" | -1 - Come back    ( Return to the Sorting )          |");
+        System.out.println(" |------------------------------------------------------|");
+        System.out.println(" |  0 - " + fieldName + "         ( Sort  A - Z )"+    "|");
+        System.out.println(" |------------------------------------------------------|");
+        System.out.println(" |  1 - " + fieldName + "         ( Sort  Z - A )"+    "|");
+        System.out.println(" |______________________________________________________|");
         System.out.print("Enter the command: ");
     }
 

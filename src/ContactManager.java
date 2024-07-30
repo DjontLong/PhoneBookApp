@@ -237,7 +237,7 @@ public class ContactManager {
             switch (command) {
                 case -1: return;
                 case 0: sortContactsByField(user, Comparator.comparing(Contact::getName), "Name"); break;
-                case 1:  break;
+                case 1:  sortContactsByField(user, Comparator.comparing(Contact::getSurname), "Surname"); break;
                 case 2:  break;
                 default: System.out.println("Invalid command... Try again!");
             }
