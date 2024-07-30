@@ -93,4 +93,142 @@ public class Menu {
         System.out.println("|_________________________________________________|");
         System.out.print("What data do you want to edit ? ");
     }
+
+    public static void showSortingMenu() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |            Main  menu -> Sorting                |");
+        System.out.println(" |                                                 |");
+        System.out.println(" |_________________________________________________|");
+        System.out.println(" |                                                 |");
+        System.out.println(" | -1 - Come back    ( Return to the main menu )   |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  0 - Name         ( Sort  A-Z / Z-A )           |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  1 - Surname      ( Sort  A-Z / Z-A )           |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  2 - Number       ( Sort  1-9 / 9-1 )           |");
+        System.out.println(" |_________________________________________________|");
+        System.out.print("Enter the command: ");
+    }
+
+    public static void showSortingMenuByName() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |          Main  menu -> Sorting -> Name          |");
+        System.out.println(" |                                                 |");
+        System.out.println(" |_________________________________________________|");
+        System.out.println(" |                                                 |");
+        System.out.println(" | -1 - Come back    ( Return to the Sorting )     |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  0 - Name         ( Sort  A - Z )               |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  1 - Name         ( Sort  Z - A )               |");
+        System.out.println(" |_________________________________________________|");
+        System.out.print("Enter the command: ");
+    }
+
+    public static void showSortNameAZ() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |             You sort Name A to Z                |");
+        System.out.println(" |_________________________________________________|");
+    }
+
+    public static void showSortNameZA() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |             You sort Name Z to A                |");
+        System.out.println(" |_________________________________________________|");
+
+    }
+
+    public static void showSortingMenuBySurname() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |          Main  menu -> Sorting -> Surname       |");
+        System.out.println(" |                                                 |");
+        System.out.println(" |_________________________________________________|");
+        System.out.println(" |                                                 |");
+        System.out.println(" | -1 - Come back    ( Return to the Sorting )     |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  0 - Surname         ( Sort  A - Z )            |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  1 - Surname      ( Sort  Z - A )               |");
+        System.out.println(" |_________________________________________________|");
+        System.out.print("Enter the command: ");
+    }
+
+    public static void showSortSurnameAZ() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |             You sort Surname A to Z             |");
+        System.out.println(" |_________________________________________________|");
+    }
+
+    public static void showSortSurnameZA() {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |             You sort Surname Z to A             |");
+        System.out.println(" |_________________________________________________|");
+
+    }
+
+//    public static void showSortingMenuByNumber() {
+//        System.out.println("  _________________________________________________");
+//        System.out.println(" |                                                 |");
+//        System.out.println(" |               << Phone book  >>                 |");
+//        System.out.println(" |          Main  menu -> Sorting -> Number        |");
+//        System.out.println(" |                                                 |");
+//        System.out.println(" |_________________________________________________|");
+//        System.out.println(" |                                                 |");
+//        System.out.println(" | -1 - Come back    ( Return to the Sorting )     |");
+//        System.out.println(" |-------------------------------------------------|");
+//        System.out.println(" |  0 - Number         ( Sort  1 - 9 )             |");
+//        System.out.println(" |-------------------------------------------------|");
+//        System.out.println(" |  1 - Number      ( Sort  9 - 1 )                |");
+//        System.out.println(" |_________________________________________________|");
+//        System.out.print("Enter the command: ");
+//    }
+
+    public static void showSortMenuByField(String fieldName) {
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(" |      Main  menu -> Sorting -> " + fieldName + "              |");
+        System.out.println(" |                                                 |");
+        System.out.println(" |_________________________________________________|");
+        System.out.println(" |                                                 |");
+        System.out.println(" | -1 - Come back    ( Return to the Sorting )     |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  0 - " + fieldName + "         ( Sort  A - Z )               |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(" |  1 - " + fieldName + "         ( Sort  Z - A )               |");
+        System.out.println(" |_________________________________________________|");
+        System.out.print("Enter the command: ");
+    }
+
+//    public static void showSortNumberAsc() {
+//        System.out.println("  _________________________________________________");
+//        System.out.println(" |                                                 |");
+//        System.out.println(" |               << Phone book  >>                 |");
+//        System.out.println(" |             You sort Number 1 to 9              |");
+//        System.out.println(" |_________________________________________________|");
+//    }
+//
+//    public static void showSortNumberDesc() {
+//        System.out.println("  _________________________________________________");
+//        System.out.println(" |                                                 |");
+//        System.out.println(" |               << Phone book  >>                 |");
+//        System.out.println(" |             You sort Number 9 to 1              |");
+//        System.out.println(" |_________________________________________________|");
+//    }
+
 }

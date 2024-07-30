@@ -11,11 +11,11 @@ public class PhoneBookApp {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         startMenu();
     }
 
-    private static void startMenu() {
+    private static void startMenu() throws InterruptedException {
         while (true) {
             userManager.loadUsers();
             Menu.showStartMenu();

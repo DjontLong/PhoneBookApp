@@ -13,7 +13,40 @@ public class UserManager {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public void signIn() {
+    private void userMenu(User user) throws InterruptedException {
+        while (true) {
+            Menu.showUserMenu();
+
+            int command = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (command) {
+                case 0:
+                    saveAndExit();
+                    break;
+                case 1:
+                    ContactManager.contactMenu(user);
+                    break;
+                case 2:
+                    ContactManager.printContacts(user);
+                    break;
+                case 3:
+                    // Sorting
+                    ContactManager.sortingContactsMenu(user);
+                    break;
+                case 4:
+                    // Search
+                    break;
+                case 5:
+                    saveUsers();
+                    return;
+                default:
+                    System.out.print("Unknown command! Try again!");
+            }
+        }
+    }
+
+    public void signIn() throws InterruptedException {
         System.out.print("Enter login: ");
         String login = scanner.nextLine();
 
@@ -108,37 +141,5 @@ public class UserManager {
     public void saveAndExit() {
         saveUsers();
         System.exit(0);
-    }
-
-    public void saveAndComeback() {
-        saveUsers();
-        Menu.showStartMenu();
-    }
-
-    private void userMenu(User user) {
-        while (true) {
-            Menu.showUserMenu();
-
-            int command = scanner.nextInt();
-            scanner.nextLine();
-
-            switch (command) {
-                case 0:
-                    saveAndExit();
-                    break;
-                case 1:
-                    ContactManager.contactMenu(user);
-                    break;
-                case 2:
-                    ContactManager.printContacts(user);
-                    break;
-                case 3:
-                    // Sorting
-                case 4:
-                    // Search
-                case 5:
-                    saveAndComeback();
-            }
-        }
     }
 }
