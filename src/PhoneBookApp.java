@@ -23,6 +23,7 @@ public class PhoneBookApp {
             int command = scanner.nextInt();
             scanner.nextLine();
 
+
             switch (command) {
                 case 0:
                     userManager.saveUsers();

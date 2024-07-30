@@ -62,6 +62,7 @@ public class UserManager {
         System.out.println("Invalid login or password!");
     }
 
+
     public void signUp() {
         System.out.print("Enter name: ");
         String name = scanner.nextLine();

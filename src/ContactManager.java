@@ -244,6 +244,7 @@ public class ContactManager {
         }
     }
 
+
     // Реализация сортировки контактов по полю
     private static void sortContactsByField(User user, Comparator<Contact> comparator, String fieldName) throws InterruptedException {
         Menu.showSortMenuByField(fieldName);

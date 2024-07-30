@@ -30,6 +30,7 @@ public class User {
         return contacts;
     }
 
+
     public void addContacts(Contact contact) {
         contacts.add(contact);
     }
