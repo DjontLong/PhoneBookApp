@@ -238,7 +238,7 @@ public class ContactManager {
                 case -1: return;
                 case 0: sortContactsByField(user, Comparator.comparing(Contact::getName), "Name"); break;
                 case 1:  sortContactsByField(user, Comparator.comparing(Contact::getSurname), "Surname"); break;
-                case 2:  break;
+                case 2:  sortContactsByField(user, Comparator.comparing(Contact::getPhoneNumber), "Number"); break;
                 default: System.out.println("Invalid command... Try again!");
             }
         }

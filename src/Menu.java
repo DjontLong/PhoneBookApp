@@ -199,22 +199,31 @@ public class Menu {
 //    }
 
     public static void showSortMenuByField(String fieldName) {
-        System.out.println("  ______________________________________________________");
-        System.out.println(" |                                                      |");
-        System.out.println(" |               << Phone book  >>                      |");
-        System.out.println(" |      Main  menu -> Sorting -> " + fieldName +"                   |");
-        System.out.println(" |                                                      |");
-        System.out.println(" |______________________________________________________|");
-        System.out.println(" |                                                      |");
-        System.out.println(" | -1 - Come back    ( Return to the Sorting )          |");
-        System.out.println(" |------------------------------------------------------|");
-        System.out.println(" |  0 - " + fieldName + "         ( Sort  A - Z )"+    "|");
-        System.out.println(" |------------------------------------------------------|");
-        System.out.println(" |  1 - " + fieldName + "         ( Sort  Z - A )"+    "|");
-        System.out.println(" |______________________________________________________|");
-        System.out.print("Enter the command: ");
+        // Здесь пришлось использовать форматирование строк, так как имя сортируемого поля(Name или Surname, или Number)
+        // подставляются динамически, длины наименований разный и границы таблицы ломались
 
+        // %-18s - вырыванивает текст по левому краю и обеспечивает минимальную ширину в 18 символов
+
+        String menuTitle = String.format(" |      Main  menu -> Sorting -> %-18s|", fieldName);
+        String option0 = String.format(" |  0 - %-18s ( Sort  A - Z )         |", fieldName);
+        String option1 = String.format(" |  1 - %-18s ( Sort  Z - A )         |", fieldName);
+
+        System.out.println("  _________________________________________________");
+        System.out.println(" |                                                 |");
+        System.out.println(" |               << Phone book  >>                 |");
+        System.out.println(menuTitle);
+        System.out.println(" |                                                 |");
+        System.out.println(" |_________________________________________________|");
+        System.out.println(" |                                                 |");
+        System.out.println(" | -1 - Come back    ( Return to the Sorting )     |");
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(option0);
+        System.out.println(" |-------------------------------------------------|");
+        System.out.println(option1);
+        System.out.println(" |_________________________________________________|");
+        System.out.print("Enter the command: ");
     }
+
 
 
 //    public static void showSortNumberAsc() {
