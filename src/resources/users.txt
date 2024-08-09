@@ -1,1 +1,12 @@
 Roman, Dude, 123
+Anna, Star, password1
+Maxim, Thunder, password2
+Sofia, Dreamer, password3
+Sergey, Maverick, password4
+Elena, Sunshine, password5
+Alexey, Phantom, password6
+Olga, Raven, password7
+Dmitry, Blaze, password8
+Victoria, Moonlight, password9
+Igor, Ghost, password10
+Ivan, Mag, 177

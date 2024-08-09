@@ -1,3 +1,5 @@
+package phonebook;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +50,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "phonebook.User{" +
                 "name='" + name + '\'' +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +

@@ -1,8 +1,9 @@
+package phonebook;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,31 +18,37 @@ public class UserManager {
         while (true) {
             Menu.showUserMenu();
 
-            int command = scanner.nextInt();
-            scanner.nextLine();
+            try {
+                int command = scanner.nextInt();
+                scanner.nextLine();
 
-            switch (command) {
-                case 0:
-                    saveAndExit();
-                    break;
-                case 1:
-                    ContactManager.contactMenu(user);
-                    break;
-                case 2:
-                    ContactManager.printContacts(user);
-                    break;
-                case 3:
-                    // Sorting
-                    ContactManager.sortingContactsMenu(user);
-                    break;
-                case 4:
-                    // Search
-                    break;
-                case 5:
-                    saveUsers();
-                    return;
-                default:
-                    System.out.print("Unknown command! Try again!");
+                switch (command) {
+                    case 0:
+                        saveAndExit();
+                        break;
+                    case 1:
+                        ContactManager.contactMenu(user);
+                        break;
+                    case 2:
+                        ContactManager.printContacts(user);
+                        break;
+                    case 3:
+                        // Sorting
+                        ContactManager.sortingContactsMenu(user);
+                        break;
+                    case 4:
+                        // Search
+                        ContactManager.searchMenu(user);
+                        break;
+                    case 5:
+                        saveUsers();
+                        return;
+                    default:
+                        System.out.print("Unknown command! Try again!");
+                }
+            } catch (Exception e) {
+                System.out.println("Incorrect input! Try again!");
+                scanner.nextLine();
             }
         }
     }

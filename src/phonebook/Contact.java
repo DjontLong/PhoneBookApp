@@ -1,3 +1,5 @@
+package phonebook;
+
 public class Contact {
     private String name;
     private String surname;
@@ -35,11 +37,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                '}';
+        return phoneNumber + " " + name + " " + surname;
     }
 }
 
